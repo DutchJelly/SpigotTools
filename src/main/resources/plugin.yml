@@ -1,0 +1,8 @@
+name: SpigotToolsTest
+author: DutchJelly
+main: com.dutchjelly.spigottools.testing.ToolsTest
+version: 1.0
+commands:
+  toolstest:
+    description: a test for SpigotTools
+    usage: /toolstest
