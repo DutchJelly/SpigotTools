@@ -35,6 +35,7 @@ public class CustomCommandHandler implements TabCompleter, CommandExecutor{
         PluginCommand pCmd = CommandRegisterer.registerCommand(plugin, aliases.toArray(new String[aliases.size()]));
         pCmd.setExecutor(this);
         pCmd.setTabCompleter(this);
+        pCmd.setDescription(cmd.getDescription());
         registered.add(cmd);
     }
 
@@ -89,7 +90,7 @@ public class CustomCommandHandler implements TabCompleter, CommandExecutor{
     }
 
     private boolean hasPermission(ICommand cmd, CommandSender sender){
-        if(cmd.getPermissions().length == 0)
+        if(cmd.getPermissions() == null || cmd.getPermissions().length == 0)
             return true;
         for(String perm : cmd.getPermissions()){
             if(sender.hasPermission(perm))
