@@ -11,7 +11,7 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.SimplePluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-//Credits to https://bukkit.org/members/elchilen0.90636997/ for posing a
+//Credits to https://bukkit.org/members/elchilen0.90636997/ for posting a
 //tutorial of this on the bukkit forums.
 class CommandRegisterer {
 
